@@ -23,15 +23,19 @@ System.out.print(pi.charAt(2));
 			// 4. Create a for loop that will step through each digit of pi (steps 5-8)
 			//    NOTE: The number of digits in your string will be
 			//       yourStringVariable.length()
-for (int i = 0; i < args.length; i++) {
+for (int i = 3; i < pi.length(); i++) {
 				// 5. Ask the user for the NEXT digit of pi.
-String sam = 
+String sam = JOptionPane.showInputDialog("what is the next digit");
 				// 6. Compare the user's input to the next digit of your pi variable 
 				//    (look at step 3 for a clue).
 				//    HINT: use charAt(0) to get 1st char of user input String 
-
-					// 7. If they are correct, print out "correct".
-
+char w = sam.charAt(0);
+// 7. If they are correct, print out "correct".
+if(w==pi.charAt(i)) {
+System.out.println("correct");
+}else {
+	System.out.println("incorrect");
+}
 					// 8. If they are not, print out "incorrect" and tell them
 					//    to start over. Use 'break;' to break out of the loop.
 
