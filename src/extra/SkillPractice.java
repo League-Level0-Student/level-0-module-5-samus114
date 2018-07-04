@@ -1,3 +1,4 @@
+package extra;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
@@ -31,7 +32,7 @@ public class SkillPractice {
 
 	void skill2() {
 		// Write a loop to print every third number between 1 and 30 to the console
-		for (int i = 1; i < 31; i++) {
+		for (int i = 3; i < 31; i+=3) {
 			System.out.println(i);
 		}
 	}
@@ -45,11 +46,11 @@ public class SkillPractice {
 		// Get another random number that is less than 10 and print it to the console
 		int random = 0;
 		Random r = new Random();
-		random = r.nextInt(20);
+		random = r.nextInt(10);
 		System.out.println(random);
 		// Using a pop-up, tell the user the difference between the numbers // Hint: use
 		// subtraction
-		JOptionPane.showMessageDialog(null, "" + (randomChoice - random));
+		JOptionPane.showMessageDialog(null, "skill 3 difference is " + (randomChoice - random));
 	}
 
 	void skill4() {
@@ -77,7 +78,7 @@ public class SkillPractice {
 		// If there is more than 1 car, use a pop-up to display how many wheels the //
 		// cars have between them.
 		if (cars > 1) {
-			JOptionPane.showInputDialog("your car has " + (cars * 4) + "wheels");
+			JOptionPane.showInputDialog("your cars have " + (cars * 4) + "wheels");
 		}
 	}
 
@@ -85,6 +86,6 @@ public class SkillPractice {
 		String a = JOptionPane.showInputDialog("what is the name of your school?");
 		// In another pop-up, tell the user, that their school is a fantastic school. //
 		// You must include the name of the school in the message.
-		JOptionPane.showMessageDialog(null, "your at " + a);
+		JOptionPane.showMessageDialog(null, "you are at " + a);
 	}
 }
